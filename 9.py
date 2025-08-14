@@ -4,15 +4,13 @@ academic_toppers_status = input("Academic Status (yes/no): ").lower()
 base_tuition_fee = int(input("Base tuition fee: "))
 
 discount_percentage = 0
-add_discount = 0  # Ensure always defined
-
-# Validate grade
+add_discount = 0  
 if 1 <= student_grade <= 12:
     print("Valid student grade")
 else:
     print("Student grades are invalid")
 
-# Main discount logic
+
 if 9 <= student_grade <= 12:
     if academic_toppers_status == "yes":
         discount_percentage = 20
@@ -23,13 +21,13 @@ elif 6 <= student_grade <= 8:
 elif student_grade < 6:
     discount_percentage = 0
 
-# Additional special grade discounts
+
 if student_grade == 10:
     add_discount = 3
 elif student_grade == 12:
     add_discount = 5
 
-# Total and final calculation
+
 total_discount = discount_percentage + add_discount
 discount_amount = base_tuition_fee * (total_discount / 100)
 final_fee = base_tuition_fee - discount_amount
