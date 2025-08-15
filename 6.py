@@ -1,9 +1,11 @@
-car_name = "Mahindra"
-actual_price = 1700000
-down_payment = 160000
-interest_rate = 9
-loan_years = 4  
+# Get user inputs
+car_name = input("Enter Car Name: ")
+actual_price = float(input("Enter Actual Price (₹): "))
+down_payment = float(input("Enter Down Payment (₹): "))
+interest_rate = float(input("Enter Interest Rate (% per annum): "))
+loan_years = int(input("Enter Loan Tenure (years): "))
 
+# Calculate loan amount
 loan_amount = actual_price - down_payment
 
 # Calculate EMI components
