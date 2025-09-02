@@ -243,12 +243,49 @@ for i in range(n):
     print()  
 """  
 #6
+""" 
 for i in range(5):
     for j in range(5):
         print("#",end="" )
     print()
+""" 
 #7 increasing triangle pattern
+""" 
 for i in range(5):
     for j in range(i+1):
         print("*",end=" ")
-    print()            
+    print()  
+""" 
+#decreasing triangle pattern
+
+for i in range(5):
+    for j in range(i,5):
+        print("*", end=" ")
+    print() 
+
+#right sided triangle
+n = 5
+for i in range(n):
+    for j in range(i+1):
+        print(" ", end=" ")
+    for j in range(i,5):
+        print("*", end=" ")
+    print()
+#2
+n = 5
+for i in range(n):
+    for j in range(i,n):
+        print(" ", end=" ")
+    for j in range(i+1):
+        print("*", end=" ")
+    print()
+#hill pattern
+n=5
+for i in range(n):
+    for j in range(i,n):
+        print(" ",end=" ")
+    for j in range(i):
+        print("*",end=" ")
+    for j in range(i+1):
+        print("*",end=" ")
+    print()
